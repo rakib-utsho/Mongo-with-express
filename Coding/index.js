@@ -20,12 +20,20 @@ const userSchema = new mongoose.Schema({
 
 const User = mongoose.model("User", userSchema); 
 
-User.updateOne({name: "Tony"}, {age: 49})
-.then((res)=>{
-    console.log(res);
-}).catch((err)=>{
-    console.log(err);
-});
+// User.updateOne({name: "Tony"}, {age: 49})
+// .then((res)=>{
+//     console.log(res);
+// }).catch((err)=>{
+//     console.log(err);
+// });
+
+// User.findOneAndUpdate({name: "Tony"}, {age: 35})
+// .then((res)=>{
+//     console.log(res);
+// })
+// .catch((err)=>{
+//     console.log(err);
+// });
 
 // User.findById("6782d0f357e0d340a9c32704")
 // .then((res)=>{
